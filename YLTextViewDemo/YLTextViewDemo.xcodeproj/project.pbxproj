@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF57D5EF190569BC008A1631 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF57D5EE190569BC008A1631 /* Foundation.framework */; };
+		DF57D5F1190569BC008A1631 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF57D5F0190569BC008A1631 /* CoreGraphics.framework */; };
+		DF57D5F3190569BC008A1631 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF57D5F2190569BC008A1631 /* UIKit.framework */; };
+		DF57D5F9190569BC008A1631 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF57D5F7190569BC008A1631 /* InfoPlist.strings */; };
+		DF57D5FB190569BC008A1631 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF57D5FA190569BC008A1631 /* main.m */; };
+		DF57D5FF190569BC008A1631 /* YLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF57D5FE190569BC008A1631 /* YLAppDelegate.m */; };
+		DF57D602190569BC008A1631 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF57D600190569BC008A1631 /* Main.storyboard */; };
+		DF57D605190569BC008A1631 /* YLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF57D604190569BC008A1631 /* YLViewController.m */; };
+		DF57D607190569BC008A1631 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF57D606190569BC008A1631 /* Images.xcassets */; };
+		DF57D60E190569BC008A1631 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF57D60D190569BC008A1631 /* XCTest.framework */; };
+		DF57D60F190569BC008A1631 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF57D5EE190569BC008A1631 /* Foundation.framework */; };
+		DF57D610190569BC008A1631 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF57D5F2190569BC008A1631 /* UIKit.framework */; };
+		DF57D618190569BC008A1631 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF57D616190569BC008A1631 /* InfoPlist.strings */; };
+		DF57D61A190569BC008A1631 /* YLTextViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF57D619190569BC008A1631 /* YLTextViewDemoTests.m */; };
+		DF57D62619056A6D008A1631 /* YLTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF57D62519056A6D008A1631 /* YLTextView.m */; };
+		DF57D62719056A6D008A1631 /* YLTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF57D62519056A6D008A1631 /* YLTextView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF57D611190569BC008A1631 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF57D5E3190569BC008A1631 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF57D5EA190569BC008A1631;
+			remoteInfo = YLTextViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DF57D5EB190569BC008A1631 /* YLTextViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLTextViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF57D5EE190569BC008A1631 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DF57D5F0190569BC008A1631 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DF57D5F2190569BC008A1631 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DF57D5F6190569BC008A1631 /* YLTextViewDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YLTextViewDemo-Info.plist"; sourceTree = "<group>"; };
+		DF57D5F8190569BC008A1631 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DF57D5FA190569BC008A1631 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DF57D5FC190569BC008A1631 /* YLTextViewDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YLTextViewDemo-Prefix.pch"; sourceTree = "<group>"; };
+		DF57D5FD190569BC008A1631 /* YLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLAppDelegate.h; sourceTree = "<group>"; };
+		DF57D5FE190569BC008A1631 /* YLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLAppDelegate.m; sourceTree = "<group>"; };
+		DF57D601190569BC008A1631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF57D603190569BC008A1631 /* YLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLViewController.h; sourceTree = "<group>"; };
+		DF57D604190569BC008A1631 /* YLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLViewController.m; sourceTree = "<group>"; };
+		DF57D606190569BC008A1631 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DF57D60C190569BC008A1631 /* YLTextViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YLTextViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF57D60D190569BC008A1631 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DF57D615190569BC008A1631 /* YLTextViewDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YLTextViewDemoTests-Info.plist"; sourceTree = "<group>"; };
+		DF57D617190569BC008A1631 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DF57D619190569BC008A1631 /* YLTextViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLTextViewDemoTests.m; sourceTree = "<group>"; };
+		DF57D62419056A6D008A1631 /* YLTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YLTextView.h; path = ../YLTextView/YLTextView.h; sourceTree = "<group>"; };
+		DF57D62519056A6D008A1631 /* YLTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YLTextView.m; path = ../YLTextView/YLTextView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF57D5E8190569BC008A1631 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF57D5F1190569BC008A1631 /* CoreGraphics.framework in Frameworks */,
+				DF57D5F3190569BC008A1631 /* UIKit.framework in Frameworks */,
+				DF57D5EF190569BC008A1631 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF57D609190569BC008A1631 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF57D60E190569BC008A1631 /* XCTest.framework in Frameworks */,
+				DF57D610190569BC008A1631 /* UIKit.framework in Frameworks */,
+				DF57D60F190569BC008A1631 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF57D5E2190569BC008A1631 = {
+			isa = PBXGroup;
+			children = (
+				DF57D62319056A56008A1631 /* Classes */,
+				DF57D5F4190569BC008A1631 /* YLTextViewDemo */,
+				DF57D613190569BC008A1631 /* YLTextViewDemoTests */,
+				DF57D5ED190569BC008A1631 /* Frameworks */,
+				DF57D5EC190569BC008A1631 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF57D5EC190569BC008A1631 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF57D5EB190569BC008A1631 /* YLTextViewDemo.app */,
+				DF57D60C190569BC008A1631 /* YLTextViewDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF57D5ED190569BC008A1631 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF57D5EE190569BC008A1631 /* Foundation.framework */,
+				DF57D5F0190569BC008A1631 /* CoreGraphics.framework */,
+				DF57D5F2190569BC008A1631 /* UIKit.framework */,
+				DF57D60D190569BC008A1631 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF57D5F4190569BC008A1631 /* YLTextViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DF57D5FD190569BC008A1631 /* YLAppDelegate.h */,
+				DF57D5FE190569BC008A1631 /* YLAppDelegate.m */,
+				DF57D600190569BC008A1631 /* Main.storyboard */,
+				DF57D603190569BC008A1631 /* YLViewController.h */,
+				DF57D604190569BC008A1631 /* YLViewController.m */,
+				DF57D606190569BC008A1631 /* Images.xcassets */,
+				DF57D5F5190569BC008A1631 /* Supporting Files */,
+			);
+			path = YLTextViewDemo;
+			sourceTree = "<group>";
+		};
+		DF57D5F5190569BC008A1631 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF57D5F6190569BC008A1631 /* YLTextViewDemo-Info.plist */,
+				DF57D5F7190569BC008A1631 /* InfoPlist.strings */,
+				DF57D5FA190569BC008A1631 /* main.m */,
+				DF57D5FC190569BC008A1631 /* YLTextViewDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF57D613190569BC008A1631 /* YLTextViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF57D619190569BC008A1631 /* YLTextViewDemoTests.m */,
+				DF57D614190569BC008A1631 /* Supporting Files */,
+			);
+			path = YLTextViewDemoTests;
+			sourceTree = "<group>";
+		};
+		DF57D614190569BC008A1631 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF57D615190569BC008A1631 /* YLTextViewDemoTests-Info.plist */,
+				DF57D616190569BC008A1631 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF57D62319056A56008A1631 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DF57D62419056A6D008A1631 /* YLTextView.h */,
+				DF57D62519056A6D008A1631 /* YLTextView.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF57D5EA190569BC008A1631 /* YLTextViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF57D61D190569BC008A1631 /* Build configuration list for PBXNativeTarget "YLTextViewDemo" */;
+			buildPhases = (
+				DF57D5E7190569BC008A1631 /* Sources */,
+				DF57D5E8190569BC008A1631 /* Frameworks */,
+				DF57D5E9190569BC008A1631 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YLTextViewDemo;
+			productName = YLTextViewDemo;
+			productReference = DF57D5EB190569BC008A1631 /* YLTextViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF57D60B190569BC008A1631 /* YLTextViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF57D620190569BD008A1631 /* Build configuration list for PBXNativeTarget "YLTextViewDemoTests" */;
+			buildPhases = (
+				DF57D608190569BC008A1631 /* Sources */,
+				DF57D609190569BC008A1631 /* Frameworks */,
+				DF57D60A190569BC008A1631 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF57D612190569BC008A1631 /* PBXTargetDependency */,
+			);
+			name = YLTextViewDemoTests;
+			productName = YLTextViewDemoTests;
+			productReference = DF57D60C190569BC008A1631 /* YLTextViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF57D5E3190569BC008A1631 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YL;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Yong Li";
+				TargetAttributes = {
+					DF57D60B190569BC008A1631 = {
+						TestTargetID = DF57D5EA190569BC008A1631;
+					};
+				};
+			};
+			buildConfigurationList = DF57D5E6190569BC008A1631 /* Build configuration list for PBXProject "YLTextViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF57D5E2190569BC008A1631;
+			productRefGroup = DF57D5EC190569BC008A1631 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF57D5EA190569BC008A1631 /* YLTextViewDemo */,
+				DF57D60B190569BC008A1631 /* YLTextViewDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF57D5E9190569BC008A1631 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF57D607190569BC008A1631 /* Images.xcassets in Resources */,
+				DF57D5F9190569BC008A1631 /* InfoPlist.strings in Resources */,
+				DF57D602190569BC008A1631 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF57D60A190569BC008A1631 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF57D618190569BC008A1631 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF57D5E7190569BC008A1631 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF57D62619056A6D008A1631 /* YLTextView.m in Sources */,
+				DF57D5FB190569BC008A1631 /* main.m in Sources */,
+				DF57D605190569BC008A1631 /* YLViewController.m in Sources */,
+				DF57D5FF190569BC008A1631 /* YLAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF57D608190569BC008A1631 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF57D62719056A6D008A1631 /* YLTextView.m in Sources */,
+				DF57D61A190569BC008A1631 /* YLTextViewDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF57D612190569BC008A1631 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF57D5EA190569BC008A1631 /* YLTextViewDemo */;
+			targetProxy = DF57D611190569BC008A1631 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DF57D5F7190569BC008A1631 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF57D5F8190569BC008A1631 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DF57D600190569BC008A1631 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF57D601190569BC008A1631 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DF57D616190569BC008A1631 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF57D617190569BC008A1631 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF57D61B190569BC008A1631 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DF57D61C190569BC008A1631 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF57D61E190569BC008A1631 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YLTextViewDemo/YLTextViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "YLTextViewDemo/YLTextViewDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DF57D61F190569BC008A1631 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YLTextViewDemo/YLTextViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "YLTextViewDemo/YLTextViewDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DF57D621190569BD008A1631 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YLTextViewDemo.app/YLTextViewDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YLTextViewDemo/YLTextViewDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "YLTextViewDemoTests/YLTextViewDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DF57D622190569BD008A1631 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YLTextViewDemo.app/YLTextViewDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YLTextViewDemo/YLTextViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "YLTextViewDemoTests/YLTextViewDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF57D5E6190569BC008A1631 /* Build configuration list for PBXProject "YLTextViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF57D61B190569BC008A1631 /* Debug */,
+				DF57D61C190569BC008A1631 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF57D61D190569BC008A1631 /* Build configuration list for PBXNativeTarget "YLTextViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF57D61E190569BC008A1631 /* Debug */,
+				DF57D61F190569BC008A1631 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DF57D620190569BD008A1631 /* Build configuration list for PBXNativeTarget "YLTextViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF57D621190569BD008A1631 /* Debug */,
+				DF57D622190569BD008A1631 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF57D5E3190569BC008A1631 /* Project object */;
+}
