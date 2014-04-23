@@ -15,6 +15,9 @@
 
 @implementation NSString (Extras)
 
+/*
+ * This is from here: http://stackoverflow.com/questions/18744447/autolayout-rtl-uilabel-text-alignment
+ */
 - (NSTextAlignment)naturalTextAligment {
     if (self.length == 0)
         return NSTextAlignmentNatural;
