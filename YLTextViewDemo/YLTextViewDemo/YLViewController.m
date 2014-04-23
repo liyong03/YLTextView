@@ -23,10 +23,14 @@
     self.view.backgroundColor = [UIColor lightGrayColor];
     
     YLTextView* textview = [[YLTextView alloc] initWithFrame:CGRectMake(10, 30, 300, 100)];
-    textview.font = [UIFont systemFontOfSize:13.f];
-    textview.placeholder = @"Say something...";
+    textview.placeholder = NSLocalizedString(@"say_something", nil);
     [self.view addSubview:textview];
     [textview becomeFirstResponder];
+    
+    UITextField* textField = [[UITextField alloc] initWithFrame:CGRectMake(10, 150, 300, 40)];
+    textField.borderStyle = UITextBorderStyleRoundedRect;
+    textField.placeholder = NSLocalizedString(@"say_something", nil);
+    [self.view addSubview:textField];
 }
 
 - (void)didReceiveMemoryWarning

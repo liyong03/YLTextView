@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  YLTextViewDemo
+
+  Created by Yong Li on 14-4-23.
+  Copyright (c) 2014年 Yong Li. All rights reserved.
+*/
+
+"say_something" = "Say something ...";

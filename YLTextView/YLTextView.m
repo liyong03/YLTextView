@@ -8,6 +8,29 @@
 
 #import "YLTextView.h"
 
+
+@interface NSString (Extras)
+- (NSTextAlignment)naturalTextAligment;
+@end
+
+@implementation NSString (Extras)
+
+- (NSTextAlignment)naturalTextAligment {
+    if (self.length == 0)
+        return NSTextAlignmentNatural;
+    NSArray *tagschemes = [NSArray arrayWithObjects:NSLinguisticTagSchemeLanguage, nil];
+    NSLinguisticTagger *tagger = [[NSLinguisticTagger alloc] initWithTagSchemes:tagschemes options:0];
+    [tagger setString:self];
+    NSString *language = [tagger tagAtIndex:0 scheme:NSLinguisticTagSchemeLanguage tokenRange:NULL sentenceRange:NULL];
+    if ([language rangeOfString:@"he"].location != NSNotFound || [language rangeOfString:@"ar"].location != NSNotFound) {
+        return NSTextAlignmentRight;
+    } else {
+        return NSTextAlignmentLeft;
+    }
+}
+@end
+
+
 @implementation YLTextView {
     UILabel* _placeholderLabel;
 }
@@ -26,6 +49,8 @@
 }
 
 - (void)_setup {
+    self.font = [UIFont systemFontOfSize:13.f];
+    
     _placeholder = @"";
     _placeholderColor = [UIColor lightGrayColor];
     
@@ -89,6 +114,7 @@
     _placeholderLabel.backgroundColor = [UIColor clearColor];
     _placeholderLabel.textColor = self.placeholderColor;
     _placeholderLabel.text = self.placeholder;
+    _placeholderLabel.textAlignment = [_placeholderLabel.text naturalTextAligment];
     [_placeholderLabel sizeToFit];
     
     CGRect rect = [self _placeholderRectForBounds:self.bounds];
