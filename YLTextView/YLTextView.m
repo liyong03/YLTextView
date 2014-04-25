@@ -8,6 +8,7 @@
 
 #import "YLTextView.h"
 
+#define PLACEHOLDER_HIDDE_APPEAR_ANIMATION_DURATION 0.1f
 
 @interface NSString (Extras)
 - (NSTextAlignment)naturalTextAligment;
@@ -73,12 +74,23 @@
 - (void)_updatePlaceholderLabel {
     if (self.text.length) {
         if (!_placeholderLabel.hidden) {
-            _placeholderLabel.hidden = YES;
+            [UIView animateWithDuration:PLACEHOLDER_HIDDE_APPEAR_ANIMATION_DURATION
+                             animations:^{
+                                 _placeholderLabel.alpha = 0.0;
+                             } completion:^(BOOL finished) {
+                                 _placeholderLabel.hidden = YES;
+                             }];
         }
     }
     else {
         [self _configPlaceholderLabel];
         _placeholderLabel.hidden = NO;
+        _placeholderLabel.alpha = 0.0f;
+        [UIView animateWithDuration:PLACEHOLDER_HIDDE_APPEAR_ANIMATION_DURATION
+                         animations:^{
+                             _placeholderLabel.alpha = 1.0;
+                         } completion:^(BOOL finished) {
+                         }];
     }
 }
 
@@ -132,16 +144,16 @@
 }
 
 
-- (void)insertText:(NSString *)string {
-    [super insertText:string];
-    [self _updatePlaceholderLabel];
-}
-
-
-- (void)setAttributedText:(NSAttributedString *)attributedText {
-    [super setAttributedText:attributedText];
-    [self _updatePlaceholderLabel];
-}
+//- (void)insertText:(NSString *)string {
+//    [super insertText:string];
+//    [self _updatePlaceholderLabel];
+//}
+//
+//
+//- (void)setAttributedText:(NSAttributedString *)attributedText {
+//    [super setAttributedText:attributedText];
+//    [self _updatePlaceholderLabel];
+//}
 
 
 - (void)setPlaceholder:(NSString *)string {
