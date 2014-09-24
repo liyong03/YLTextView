@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF4DA8D019D31F76008C4DA3 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF4DA8CF19D31F76008C4DA3 /* Launch Screen.xib */; };
 		DF57D5EF190569BC008A1631 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF57D5EE190569BC008A1631 /* Foundation.framework */; };
 		DF57D5F1190569BC008A1631 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF57D5F0190569BC008A1631 /* CoreGraphics.framework */; };
 		DF57D5F3190569BC008A1631 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF57D5F2190569BC008A1631 /* UIKit.framework */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF4DA8CF19D31F76008C4DA3 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		DF57D5EB190569BC008A1631 /* YLTextViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLTextViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF57D5EE190569BC008A1631 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DF57D5F0190569BC008A1631 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -134,6 +136,7 @@
 				DF57D600190569BC008A1631 /* Main.storyboard */,
 				DF57D603190569BC008A1631 /* YLViewController.h */,
 				DF57D604190569BC008A1631 /* YLViewController.m */,
+				DF4DA8CF19D31F76008C4DA3 /* Launch Screen.xib */,
 				DF57D606190569BC008A1631 /* Images.xcassets */,
 				DF57D5F5190569BC008A1631 /* Supporting Files */,
 			);
@@ -281,6 +284,7 @@
 				DF57D607190569BC008A1631 /* Images.xcassets in Resources */,
 				DFD3B7F31907FB2300373DA7 /* Localizable.strings in Resources */,
 				DFD3B7E81907FA8B00373DA7 /* InfoPlist.strings in Resources */,
+				DF4DA8D019D31F76008C4DA3 /* Launch Screen.xib in Resources */,
 				DF57D5F9190569BC008A1631 /* InfoPlist.strings in Resources */,
 				DF57D602190569BC008A1631 /* Main.storyboard in Resources */,
 			);

@@ -22,12 +22,12 @@
     
     self.view.backgroundColor = [UIColor lightGrayColor];
     
-    YLTextView* textview = [[YLTextView alloc] initWithFrame:CGRectMake(10, 30, 300, 100)];
+    YLTextView* textview = [[YLTextView alloc] initWithFrame:CGRectMake(10, 30, self.view.frame.size.width - 20, 100)];
     textview.placeholder = NSLocalizedString(@"say_something", nil);
     [self.view addSubview:textview];
     [textview becomeFirstResponder];
     
-    UITextField* textField = [[UITextField alloc] initWithFrame:CGRectMake(10, 150, 300, 40)];
+    UITextField* textField = [[UITextField alloc] initWithFrame:CGRectMake(10, 150, self.view.frame.size.width - 20, 40)];
     textField.borderStyle = UITextBorderStyleRoundedRect;
     textField.placeholder = NSLocalizedString(@"say_something", nil);
     [self.view addSubview:textField];
